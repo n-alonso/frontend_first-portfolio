@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: #1D1D25;
+    background-color: #111111;
     color: #D2D2D2;
 }
 
@@ -27,6 +27,7 @@ h1, h2 {
     font-family: 'Titillium Web', sans-serif;
 }
 
+
 /* Structure */
 
 nav {
@@ -39,44 +40,81 @@ main {
     height: inherit;
 }
 
+
 /* Title */
 
+header {
+    background: center / cover no-repeat url(./assets/Circuit-Board-Desktop-Wallpaper.png);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    content: "";
+    height: 8rem;
+    width: 8rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 87%;
+    filter: invert(1);
+}
+
 h1 {
-    margin: 5% auto 2% auto;
+    font-size: 3rem;
     text-align: center;
-    font-size: xx-large;
+    color: white;
+    background-color: #111111;
+    width: 100%;
+    padding: 2% 0;
+    border-top: 1px solid #B8B8B8;
+    border-bottom: 1px solid #B8B8B8;
 }
 
-img {
-    display: block;
-    margin: 0 auto 5% auto;
-    height: 20rem;
-    width: 20rem;
-    object-fit: cover;
-    border-radius: 50%;
-}
-
-hr {
-    width: 70%;
-    margin: 2% auto 2.5% auto;
-    border-top: .1rem solid #F3F3F3;
-    opacity: 50%;
-}
 
 /* Hero */
 
 #hero {
-    text-align: center;
+    margin: 10% auto;
 }
 
-#hero h2 {
+#hero article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    width: 60%;
+}
+
+img {
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+img+#wrap {
+    padding-left:6%;
+    border-left: 1px solid 	hsla(0, 0%, 95%, .5);
+}
+
+#wrap {
+    width: 60%;
+
+}
+
+#wrap h2 {
     font-size: x-large;
     margin-bottom: 1%;
 }
 
-#hero p {
-    margin: 0 15% 5% 15%;
+#wrap p {
+    display: flex;
+    align-items: center;
 }
+
 
 /* Section */
 
