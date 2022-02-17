@@ -92,7 +92,7 @@ h1 {
     width: 60%;
 }
 
-img {
+#hero img {
     height: 15rem;
     width: 15rem;
     object-fit: cover;
@@ -111,6 +111,7 @@ img+#wrap {
 
 #wrap h2 {
     margin-bottom: 1%;
+    color: white;
 }
 
 #wrap p {
@@ -122,8 +123,8 @@ img+#wrap {
 /* Section */
 
 section {
-    background-color: #B8B8B8;
-    color: #111111;
+    background-color: #F6F7FA;
+    color: black;
     width: 70%;
     margin: 0 auto;
     border-radius: 1rem;
@@ -132,28 +133,64 @@ section {
     align-items: center;
 }
 
+
+/* Projects */
+
 #projects {
-    padding: 5% 0;
+    padding: 10% 0 5%;
     text-align: center;
     width: inherit;
 }
 
 #projects h2 {
-    margin-bottom: 1%;
+    margin: 0 auto 2%;
+    background: linear-gradient(90deg, #F6F7FA, #fff, #F6F7FA);
+    width: fit-content;
+    padding: .5% 10%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 #projects p {
-    margin-bottom: 2%;
+    margin-bottom: 10%;
 }
 
 #projects ul {
-    display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
-    grid-gap: 10% 2%;
-    background-color: red;
+    display: flex;
+    flex-direction: column;
 }
 
 #projects li {
-    background-color: yellow;
-    height: 10rem;
+    height: fit-content;
+    width: 70%;
+    margin-bottom: 5%;
+    border-radius: 1rem;
+    background-color: #fff;
+    box-shadow: 
+		-6px -6px 26px rgba(255,255,255,.83),
+		5px 10px 15px rgba(0,0,0,.05),
+		15px 20px 35px rgba(0,0,0,.1),
+		inset -2px -2px 2px rgba(0,0,0,.1),
+		inset -1px -1px 3px rgba(255,255,255,.6),
+		inset 2px 2px 8px rgba(255,255,255,.2),
+		inset 1px 1px 8px rgba(255,255,255,.2),
+		-6px -6px 26px rgba(255,255,255,.8);
 }
+
+.left {
+    
+}
+
+.right {
+    align-self: flex-end;
+}
+
+li img {
+    height: 15rem;
+    width: 25rem;
+    object-fit: cover;
+}
+
+
+/* Skills */
+
