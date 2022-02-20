@@ -133,54 +133,53 @@ section {
     align-items: center;
 }
 
+.main {
+    width: 100%;
+    background-color: #F3F3F3;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.main h2 {
+    margin: 5% auto;
+    text-align: center;
+    font-size: larger;
+}
+
 
 /* Toggles */
 
-#toggles {
+#toggleWrap {
     width: 100%;
     display: flex;
     flex-direction: row;
     cursor: pointer;
 }
 
-#toggles .projects {
+.toggles {
     width: 50%;
     padding: 2% 0;
     text-align: center;
+}
+
+.active {
     background-color: #F3F3F3;
     border-radius: 1rem 1rem 0 0;
 }
 
-#toggles .skills {
-    width: 50%;
-    padding: 2% 0;
-    text-align: center;
-    background-color: #B8B8B8;
-    border-top-right-radius: 1rem;
+.hidden {
+    display: none;
 }
 
 
 /* Projects */
 
-.projects {
-    width: 100%;
-    background-color: #F3F3F3;
-    border-radius: 0 0 1rem 1rem;
-}
-
-.projects h2 {
-    margin: 5% auto;
-    text-align: center;
-    font-size: larger;
-}
-
-.projects ul {
+#projects ul {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.projects li {
+#projects li {
     height: fit-content;
     width: 50%;
     margin-bottom: 8rem;
@@ -188,7 +187,7 @@ section {
     box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, .3);
 }
 
-.projects li:after {
+#projects li:after {
     content: "";
     position: absolute;
     display: block;
@@ -231,13 +230,13 @@ section {
     transform: translateX(10%);
 }
 
-.projects img {
+#projects img {
     width: 100%;
     height: 25rem;
     object-fit: cover;
 }
 
-.projects h6 {
+#projects h6 {
     position: absolute;
     z-index: 1;
     top: 70%;
@@ -246,7 +245,7 @@ section {
     font-size: larger;
 }
 
-.projects a {
+#projects a {
     position: absolute;
     z-index: 1;
     top: 80%;
@@ -261,8 +260,32 @@ section {
 
 /* Skills */
 
-#skills {
-    display: none;
+#skills ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 0 5%;
+}
+
+#skills li {
+    margin: 0 2% 8rem;
+    width: 8rem;
+    height: 4rem;
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, .3);
+}
+
+#skills img {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
 }
 
 

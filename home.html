@@ -23,7 +23,7 @@
     <main>
         <header>
             <h1>Front-end Developer, Implementation Engineer, and Team Lead</h1>
-            <span>▼</span>
+            <!-- <a href="#hero"><span>▼</span></a> -->
         </header>
         <div id="hero">
             <article>
@@ -44,11 +44,11 @@
             </article>
         </div>
         <section>
-            <article id="toggles">
-                <h2 class="projects">Projects</h2>
-                <h2 class="skills">Skills</h2>
+            <article id="toggleWrap">
+                <h2 class="toggles active" id="projectsButton">Projects</h2>
+                <h2 class="toggles" id="skillsButton">Skills</h2>
             </article>
-            <article class="projects">
+            <article id="projects" class="main">
                 <h2>Latest Works</h2>
                 <ul>
                     <li class="left">
@@ -73,18 +73,18 @@
                     </li>
                 </ul>
             </article>
-            <article id="skills">
-                <p>Brief description of skills section</p>
+            <article id="skills" class="main hidden">
+                <h2>My Skills</h2>
                 <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Markdown</li>
-                    <li>Command Line</li>
-                    <li>Regular Expressions</li>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                    <li>Bitbucket</li>
+                    <li><img src="./assets/html.svg" alt="html icon">HTML</li>
+                    <li><img src="./assets/css.png" alt="css icon">CSS</li>
+                    <li><img src="./assets/js.svg" alt="javascript icon">JavaScript</li>
+                    <li><img src="./assets/markdown.svg" alt="markdown icon">Markdown</li>
+                    <li><img src="./assets/command-line.png" alt="command line icon">Command Line</li>
+                    <li><img src="./assets/regex.svg" alt="regular expression icon">Regular Expressions</li>
+                    <li><img src="./assets/git.svg" alt="git icon">Git</li>
+                    <li><img src="./assets/github.png" alt="github icon">GitHub</li>
+                    <li><img src="./assets/bitbucket.svg" alt="bitbucket icon">Bitbucket</li>
                 </ul>
             </article>
         </section>
@@ -98,6 +98,6 @@
             <a href="https://github.com/n-alonso"><li><img src="./assets/github.png" alt="github icon">View Profile</li></a>
         </ul>
     </footer>
-    <script src="script.js"></script>
+    <script src="home.js"></script>
 </body>
 </html>
